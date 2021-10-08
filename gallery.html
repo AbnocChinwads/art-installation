@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/base.css">
-    <link rel="shortcut icon" href="media/favicon.ico">
+    <!-- <link rel="shortcut icon" href="media/favicon.ico"> -->
     <title>Document</title>
 </head>
 
@@ -51,22 +51,37 @@
     </header>
     <section class="align-self-center my-auto mx-auto">
         <div class="carousel">
-            <button class="carousel_button carousel_button--left">
+            <button class="carousel_button carousel_button--left is-hidden">
                 <img src="media/left-arrow.svg" alt="&lt;">
             </button>
                 <div class="carousel_track-container">
                     <ul class="carousel_track">
-                        <li class="carousel_slide">
-                            <img class="carousel_image" src="media/alyn_fighter.jpg" alt="This is where the image goes">
-                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                        <li class="carousel_slide current-slide">
+                            <div class="card carousel_image">
+                                <img class="card-image-top" src="media/carousel-image/alyn_fighter_token.png" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
                         </li>
                         <li class="carousel_slide">
-                            <img class="carousel_image" src="media/gina_ranger.jpg" alt="This is where the image goes">
-                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                            <div class="card carousel_image">
+                                <img class="card-image-top" src="media/carousel-image/gina_ranger_token.png" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </li>
                         <li class="carousel_slide">
-                            <img class="carousel_image" src="media/greg_paladin.png" alt="This is where the image goes">
-                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                            <div class="card carousel_image">
+                                <img class="card-image-top" src="media/carousel-image/greg_paladin_token.png" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
