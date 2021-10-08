@@ -50,11 +50,35 @@
         </div>
     </header>
     <section class="align-self-center my-auto mx-auto">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Art goes here">
-            <div class="card-body">
-              <h5 class="card-title">Art title</h5>
-              <p class="card-text">Here is where we can describe the art being shown above</p>
+        <div class="carousel">
+            <button class="carousel_button carousel_button--left">
+                <img src="media/left-arrow.svg" alt="&lt;">
+            </button>
+                <div class="carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide">
+                            <img class="carousel_image" src="media/alyn_fighter.jpg" alt="This is where the image goes">
+                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_image" src="media/gina_ranger.jpg" alt="This is where the image goes">
+                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_image" src="media/greg_paladin.png" alt="This is where the image goes">
+                            <p class="card-text">Here is where we can describe the art being shown above</p>
+                        </li>
+                    </ul>
+                </div>
+            <button class="carousel_button carousel_button--right">
+                <img src="media/right-arrow.svg" alt="&gt;">
+            </button>
+
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
         </div>
     </section>
     <footer class="bg-light">
@@ -77,12 +101,8 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/880029d802.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-       $(document).ready(function(){
-            $(".active").removeClass("active");
-            $("#gallery-page").addClass("active");
-        });
-    </script>
+    <script src="static/js/active_link.js"></script>
+    <script src="static/js/carousel.js"></script>
 </body>
 
 </html>
