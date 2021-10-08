@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="shortcut icon" href="media/favicon.ico">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid g-0">
+            <!-- Bootstrap Navbar -->
+            <div class="row g-0">
+                <div class="col-md">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="home-page" href="base.html"><i class="fas fa-home" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="gallery-page" href="gallery.html"> <i class="fas fa-image"
+                                            aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-page" href="contact.html"> <i class="fas fa-id-card" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col text-center">
+                    <h1>ToodlesGravity</h1>
+                    <h3>Look at my art!</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="align-self-center my-auto mx-auto">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Art goes here">
+            <div class="card-body">
+              <h5 class="card-title">Art title</h5>
+              <p class="card-text">Here is where we can describe the art being shown above</p>
+        </div>
+    </section>
+    <footer class="bg-light">
+        <!-- Social Media Links -->
+        <div class="row g-0">
+            <div class="col text-center">
+                <a class="footer-anchor" href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="footer-anchor" href="https://twitter.com/toodlesgravity" target="_blank">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                <a class="footer-anchor" href="https://www.instagram.com/toodlesgravity/" target="_blank">
+                    <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <br>Copyright information for images goes here
+            </div>
+        </div>
+    </footer>
+    <!-- JS Script source -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/880029d802.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+            $(".active").removeClass("active");
+            $("#gallery-page").addClass("active");
+        });
+    </script>
+</body>
+
+</html>

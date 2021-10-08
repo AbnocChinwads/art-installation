@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255,255,255,1) 35%, rgba(173,216,230,1) 100%);
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(143, 66, 66, 0.75); 
+    border-radius: 5px;
+    background-color: rgba(168, 39, 39, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+footer {
+    position: relative;
+    margin-top: auto;
+}
+
+/* .footer-anchor {
+    margin-left: 5rem;
+} */
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
