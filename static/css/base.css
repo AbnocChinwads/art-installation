@@ -6,13 +6,13 @@ body {
     font-family: sans-serif;
 }
 
-.container {
+/* .container {
     height: 100%;
     box-shadow: 0 0 1rem 0 rgba(143, 66, 66, 0.75); 
     border-radius: 5px;
     background-color: rgba(168, 39, 39, 0.85);
     backdrop-filter: blur(10px);
-}
+} */
 
 .main-logo-link {
     width: fit-content;
@@ -32,7 +32,7 @@ footer {
 
 .carousel {
     position: relative;
-    height: 600px;
+    height: 500px;
     width: 100%;
     margin: 0 auto;
 }
