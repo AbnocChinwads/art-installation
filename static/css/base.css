@@ -23,9 +23,11 @@ footer {
     margin-top: auto;
 }
 
-/* .footer-anchor {
-    margin-left: 5rem;
-} */
+.footer-anchor:hover, 
+.footer-anchor:focus {
+    color: #add8e6;
+}
+
 /* -------------------------------- Carousel Styling */
 
 .carousel {
