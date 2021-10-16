@@ -18,6 +18,10 @@ body {
     width: fit-content;
 }
 
+.nav-link.active {
+    color:rgba(173, 216, 230, 0.9) !important;
+}
+
 footer {
     position: relative;
     margin-top: auto;
