@@ -1,3 +1,3 @@
 # art-installation
 
-please add base.html to the end of the web address
+Add back-end to give site owner control over images in gallery

@@ -27,14 +27,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-page" href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+                                    <a class="header-anchor nav-link" id="home-page" href="index.html"><i
+                                            class="fas fa-home" aria-hidden="true"></i> Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="gallery-page" href="gallery.html"> <i class="fas fa-image"
-                                            aria-hidden="true"></i> Gallery</a>
+                                    <a class="header-anchor nav-link" id="gallery-page" href="gallery.html"> <i
+                                            class="fas fa-image" aria-hidden="true"></i> Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="contact-page" href="contact.html"> <i class="fas fa-id-card" aria-hidden="true"></i>Contact</a>
+                                    <a class="header-anchor nav-link" id="contact-page" href="contact.html"> <i
+                                            class="fas fa-id-card" aria-hidden="true"></i>Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,7 +45,7 @@
             </div>
             <div class="row g-0">
                 <div class="col text-center">
-                    <h1>ToodlesGravity</h1>
+                    <h1 class="bigger-header">ToodlesGravity</h1>
                     <h3>Look at my art!</h3>
                 </div>
             </div>
@@ -55,37 +57,40 @@
             <button class="carousel_button carousel_button--left is-hidden">
                 <img src="media/left-arrow.svg" alt="&lt;">
             </button>
-                <div class="carousel_track-container">
-                    <ul class="carousel_track">
-                        <li class="carousel_slide current-slide">
-                            <div class="card carousel_image">
-                                <img class="card-image-top" src="media/carousel-image/alyn_fighter_token.png" alt="">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                        </li>
-                        <li class="carousel_slide">
-                            <div class="card carousel_image">
-                                <img class="card-image-top" src="media/carousel-image/gina_ranger_token.png" alt="">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <div class="card carousel_image">
+                            <img class="card-image-top" src="media/carousel-image/alyn_fighter_token.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
-                        </li>
-                        <li class="carousel_slide">
-                            <div class="card carousel_image">
-                                <img class="card-image-top" src="media/carousel-image/greg_paladin_token.png" alt="">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="carousel_slide">
+                        <div class="card carousel_image">
+                            <img class="card-image-top" src="media/carousel-image/gina_ranger_token.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li class="carousel_slide">
+                        <div class="card carousel_image">
+                            <img class="card-image-top" src="media/carousel-image/greg_paladin_token.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <button class="carousel_button carousel_button--right">
                 <img src="media/right-arrow.svg" alt="&gt;">
             </button>
@@ -103,8 +108,6 @@
             <!-- Social Media Links -->
             <div class="row g-0">
                 <div class="col text-center">
-                    <a class="footer-anchor ms-1 fs-4" href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                     <a class="footer-anchor ms-1 fs-4" href="https://twitter.com/toodlesgravity" target="_blank">
                         <i class="fab fa-twitter-square" aria-hidden="true"></i></a>
                     <a class="footer-anchor ms-1 fs-4" href="https://www.instagram.com/toodlesgravity/" target="_blank">
@@ -115,8 +118,11 @@
         </div>
     </footer>
     <!-- JS Script source -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/880029d802.js" crossorigin="anonymous"></script>
     <script src="static/js/active_link.js"></script>
     <script src="static/js/carousel.js"></script>
