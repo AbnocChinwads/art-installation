@@ -1,0 +1,27 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<span class="container-fluid">
+    <div class="row g-0 mt-5">
+        <div class="col-4"></div>
+        <div class="col">
+            <p class="h3">For enquiries:</p>
+            <div class="col">
+                <textarea name="comission-enquiries" id="comission-enquiries" cols="100" rows="10"></textarea>
+            </div>
+            <a class="btn rounded-2 btn-text" style="background-color: rgb(173,216,230);" href="mailto:#">Send!</a>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</span>
+{% endblock %}

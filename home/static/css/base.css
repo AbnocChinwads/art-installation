@@ -34,6 +34,12 @@ body {
     color:rgba(173, 216, 230, 0.9) !important;
 }
 
+/* -------------------------------- Home Page */
+
+p {
+    font-size: 1.5rem;
+}
+
 /* -------------------------------- Contact Page */
 
 .btn-text {
