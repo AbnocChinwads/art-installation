@@ -14,44 +14,25 @@
 <div class="container">
     <div class="carousel">
         <button class="carousel_button carousel_button--left is-hidden">
-            <img src="{% media 'left-arrow.svg' %}" alt="&lt;">
+            <img src="{% static 'media/left-arrow.svg' %}" alt="&lt;">
         </button>
         <div class="carousel_track-container">
             <ul class="carousel_track">
-                <li class="carousel_slide current-slide">
-                    <div class="card carousel_image">
-                        <img class="card-image-top" src="{{ post.image.url }}" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                {% for img in images %}
+                    <li class="carousel_slide current-slide">
+                        <div class="card carousel_image">
+                            <img class="card-image-top" src="{{ img.image.url }}" alt="{{ img.name }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ img.image.name }}</h5>
+                                <p class="card-text">{{ img.image.description }}</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="carousel_slide">
-                    <div class="card carousel_image">
-                        <img class="card-image-top" src="{{ post.image.url }}" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="carousel_slide">
-                    <div class="card carousel_image">
-                        <img class="card-image-top" src="{{ post.image.url }}" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
         <button class="carousel_button carousel_button--right">
-            <img src="{% media 'right-arrow.svg' %}" alt="&gt;">
+            <img src="{% static 'media/right-arrow.svg' %}" alt="&gt;">
         </button>
 
         <div class="carousel_nav">
