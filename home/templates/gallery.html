@@ -2,49 +2,39 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block page_header %}
-<div class="header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
 {% block content %}
-<div class="container">
-    <div class="carousel">
-        <button class="carousel_button carousel_button--left is-hidden">
-            <img src="{% static 'media/left-arrow.svg' %}" alt="&lt;">
-        </button>
-        <div class="carousel_track-container">
-            <ul class="carousel_track">
-                {% for img in images %}
-                    <li class="carousel_slide current-slide">
-                        <div class="card carousel_image">
-                            <img class="card-image-top" src="{{ img.image.url }}" alt="{{ img.name }}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ img.image.name }}</h5>
-                                <p class="card-text">{{ img.image.description }}</p>
-                            </div>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    {% for image in images %}
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src={{ image.image.url }} alt={{ image.name }}>
+        <div class="carousel-caption">
+          <h3>{{ image.image.name }}</h3>
+          <p>{{ image.image.description }}</p>
         </div>
-        <button class="carousel_button carousel_button--right">
-            <img src="{% static 'media/right-arrow.svg' %}" alt="&gt;">
-        </button>
-
-        <div class="carousel_nav">
-            <button class="carousel_indicator current-slide"></button>
-            <button class="carousel_indicator"></button>
-            <button class="carousel_indicator"></button>
-        </div>
-    </div>
-</div>
+      </div>
+    {% endfor %}
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <script src="{% static 'js/carousel.js' %}"></script>
 {% endblock %}
